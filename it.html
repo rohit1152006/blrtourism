@@ -1,0 +1,240 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bengaluru Tech Hubs - The Silicon Valley of India</title>
+    <style>
+        :root {
+            --primary-blue: #0A66C2; /* Professional Tech Blue */
+            --secondary-green: #3D9970; /* Accent Green */
+            --dark-text: #222;
+            --main-font: sans-serif;
+            --light-bg: #f7f7f7;
+        }
+
+        body {
+            font-family: var(--main-font);
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-bg);
+            color: var(--dark-text);
+        }
+
+        /* Header (Basic Navigation) */
+        .header {
+            background-color: #fff;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+
+        .nav-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-blue);
+            text-decoration: none;
+        }
+
+        .search-bar {
+            flex-grow: 1;
+            margin: 0 30px;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 8px 15px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .user-menu {
+            width: 50px; 
+        }
+
+        /* Main Content Area */
+        .content-wrap {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .title-section h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--dark-text);
+            margin-bottom: 5px;
+        }
+
+        .title-section p {
+            font-size: 15px;
+            color: #767676;
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+
+        /* Attraction Cards (Now Tech Company Cards) */
+        .attraction-list {
+            width: 100%;
+        }
+
+        .attraction-card {
+            background-color: #fff;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            padding: 15px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            display: flex;
+            border-left: 4px solid var(--primary-blue); /* Accent stripe */
+        }
+        
+        /* Changed rank to a simple marker for campus size */
+        .rank {
+            font-size: 14px;
+            font-weight: bold;
+            color: var(--secondary-green);
+            margin-right: 15px;
+            width: 50px;
+            text-align: center;
+            padding-top: 5px;
+            line-height: 1.2;
+        }
+
+        .card-details {
+            flex: 1;
+        }
+
+        .card-details h2 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin: 0 0 5px 0;
+        }
+        
+        /* Adjusted rating to a simple badge/indicator */
+        .rating-stars {
+            color: var(--dark-text);
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+
+        .review-count {
+            font-size: 12px;
+            color: #767676;
+            margin-left: 5px;
+        }
+
+        .snippet {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .details-link a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 13px;
+        }
+        
+        .see-more-button {
+            padding: 8px 15px; 
+            border: none; 
+            background-color: var(--primary-blue); /* Primary blue for tech button */
+            color: white; 
+            border-radius: 20px; 
+            font-size: 14px; 
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">Bengaluru Tech Hub</a>
+            <div class="search-bar">
+                <input type="text" placeholder="Search Tech Parks, Startups, or Jobs...">
+            </div>
+            <div class="user-menu"></div>
+        </div>
+    </header>
+
+    <div class="content-wrap">
+        <div class="title-section">
+            <h1>Top Tech Giants in Bengaluru 💻</h1>
+            <p>A look at the global innovators driving the 'Silicon Valley of India'.</p>
+        </div>
+
+        <main class="attraction-list"> 
+
+            <article class="attraction-card">
+                <div class="rank">
+                    HQ<br>Campus
+                </div>
+                <div class="card-details">
+                    <h2>Infosys <span>(Global Software Services)</span></h2>
+                    <div class="rating-stars">
+                        🏢 **Headquarters Location:** Electronic City
+                        <span class="review-count">| Est. 1981</span>
+                    </div>
+                    <p class="snippet">One of India's largest IT companies, famous for its sprawling, distinctive corporate campus and contributions to core technology services.</p>
+                    <div class="details-link">
+                        <a href="#">View Careers & Job Openings</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="attraction-card">
+                <div class="rank">
+                    Major<br>R&D Hub
+                </div>
+                <div class="card-details">
+                    <h2>Wipro Limited <span>(IT Consulting & Services)</span></h2>
+                    <div class="rating-stars">
+                        📍 **Primary Presence:** Sarjapur Road / Doddakannelli
+                        <span class="review-count">| Focus: AI & Cloud</span>
+                    </div>
+                    <p class="snippet">A leading technology services and consulting company, recognized globally for its deep capabilities in digital transformation and innovation.</p>
+                    <div class="details-link">
+                        <a href="#">Explore Company Portfolio</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="attraction-card">
+                <div class="rank">
+                    High Growth<br>Digital
+                </div>
+                <div class="card-details">
+                    <h2>Mindtree / LTIMindtree <span>(Digital & IT Services)</span></h2>
+                    <div class="rating-stars">
+                        🔗 **Acquired by L&T:** Large campus presence
+                        <span class="review-count">| Focus: Customer Experience</span>
+                    </div>
+                    <p class="snippet">Known for its 'Mindtree Minds' culture, this company specializes in delivering deep digital solutions and modern technology consulting.</p>
+                    <div class="details-link">
+                        <a href="#">Read Latest Tech News</a>
+                    </div>
+                </div>
+            </article>
+
+            <div style="text-align: center;">
+                              <button class="see-more-button">
+                    Explore More Tech Parks
+                </button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bengaluru Forts & Historical Sites</title>
+    <style>
+        /* CSS Variables: Fort/Historical Theme */
+        :root {
+            --primary-color: #583F2F; /* Deep Brown/Wood */
+            --accent-color: #A9A9A9; /* Stone Gray/Silver */
+            --dark-text: #222;
+            --main-font: sans-serif;
+            --light-bg: #f7f7f7;
+        }
+
+        body {
+            font-family: var(--main-font);
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-bg);
+            color: var(--dark-text);
+        }
+
+        /* Header (Basic Navigation) */
+        .header {
+            background-color: #fff;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+
+        .nav-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color); 
+            text-decoration: none;
+        }
+
+        .search-bar {
+            flex-grow: 1;
+            margin: 0 30px;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 8px 15px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .user-menu {
+            width: 50px; 
+        }
+
+        /* Main Content Area */
+        .content-wrap {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .title-section h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        .title-section p {
+            font-size: 15px;
+            color: #767676;
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+
+        /* Attraction Cards (Fort Cards) */
+        .attraction-list {
+            width: 100%;
+        }
+
+        .attraction-card {
+            background-color: #fff;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            padding: 15px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            display: flex;
+            border-left: 4px solid var(--accent-color); /* Stone Gray accent stripe */
+        }
+        
+        .rank {
+            font-size: 18px;
+            font-weight: bold;
+            color: #767676;
+            margin-right: 15px;
+            width: 50px;
+            text-align: center;
+            padding-top: 5px;
+            line-height: 1.2;
+        }
+
+        .card-details {
+            flex: 1;
+        }
+
+        .card-details h2 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin: 0 0 5px 0;
+        }
+        
+        .rating-stars {
+            color: var(--accent-color);
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .review-count {
+            font-size: 12px;
+            color: #767676;
+            margin-left: 5px;
+        }
+
+        .snippet {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .details-link a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 13px;
+        }
+        
+        .see-more-button {
+            padding: 8px 15px; 
+            border: none; 
+            background-color: var(--primary-color); 
+            color: white; 
+            border-radius: 20px; 
+            font-size: 14px; 
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">Historical Bengaluru</a>
+            <div class="search-bar">
+                <input type="text" placeholder="Search Forts, Palaces, or Monuments...">
+            </div>
+            <div class="user-menu"></div>
+        </div>
+    </header>
+
+    <div class="content-wrap">
+        <div class="title-section">
+            <h1>Forts & Historical Structures of Bengaluru 🏛️</h1>
+            <p>Monuments standing as a testament to the city's royal past.</p>
+        </div>
+
+        <main class="attraction-list"> 
+
+            <article class="attraction-card">
+                <div class="rank">
+                    Main<br>Fort
+                </div>
+                <div class="card-details">
+                    <h2>Bangalore Fort <span>(Tipu Sultan's Summer Palace Area)</span></h2>
+                    <div class="rating-stars">
+                        &#9733;&#9733;&#9733;&#9733; 
+                        <span class="review-count">Built by Kempe Gowda I (1537)</span>
+                    </div>
+                    <p class="snippet">Originally a mud fort, later rebuilt in stone by Haider Ali. Only the Delhi Gate and remnants of the fort wall remain today.</p>
+                    <div class="details-link">
+                        <a href="#">See nearby attractions</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="attraction-card">
+                <div class="rank">
+                    Outer<br>Fort
+                </div>
+                <div class="card-details">
+                    <h2>Devanahalli Fort <span>(Near Bengaluru Airport)</span></h2>
+                    <div class="rating-stars">
+                        &#9733;&#9733;&#9733;
+                        <span class="review-count">Birthplace of Tipu Sultan</span>
+                    </div>
+                    <p class="snippet">A vast, relatively well-preserved historical fort built of stone, containing many temples and the birthplace of the 'Tiger of Mysore'.</p>
+                    <div class="details-link">
+                        <a href="#">View Visitor Information</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="attraction-card">
+                <div class="rank">
+                    Hill<br>Fort
+                </div>
+                <div class="card-details">
+                    <h2>Nandi Fort (Tipu's Drop) <span>(Nandi Hills)</span></h2>
+                    <div class="rating-stars">
+                        &#9733;&#9733;&#9733;&#9733;
+                        <span class="review-count">Famous for Sunrise Views</span>
+                    </div>
+                    <p class="snippet">A hill fortress located outside the main city, built by the Palegar chief, visible remnants of Tipu Sultan's time, including the famous 'Tipu's Drop'.</p>
+                    <div class="details-link">
+                        <a href="#">Check Opening Hours</a>
+                    </div>
+                </div>
+            </article>
+
+            <div style="text-align: center;">
+                <p style="font-size: 14px; color: #767676;">Showing 1-3 of the most prominent historical forts.</p>
+                <button class="see-more-button">
+                    Explore More Monuments
+                </button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

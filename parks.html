@@ -1,0 +1,235 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bengaluru Parks & Gardens</title>
+    <style>
+        /* CSS Variables for simplified theme */
+        :root {
+            --primary-blue: #0073B4; 
+            --secondary-green: #00A680; 
+            --dark-text: #222;
+            --main-font: sans-serif;
+        }
+
+        body {
+            font-family: var(--main-font);
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: var(--dark-text);
+        }
+
+        /* Header (Basic Navigation) */
+        .header {
+            background-color: #fff;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+
+        .nav-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-blue);
+            text-decoration: none;
+        }
+
+        .search-bar {
+            flex-grow: 1;
+            margin: 0 30px;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 8px 15px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            font-size: 14px;
+            outline: none;
+        }
+
+        /* User Menu is empty, keeping the class for structure */
+        .user-menu {
+            width: 50px; /* Placeholder width */
+        }
+
+        /* Main Content Area */
+        .content-wrap {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .title-section h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--dark-text);
+            margin-bottom: 5px;
+        }
+
+        .title-section p {
+            font-size: 15px;
+            color: #767676;
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+
+        /* Attraction Cards */
+        .attraction-list {
+            width: 100%;
+        }
+
+        .attraction-card {
+            background-color: #fff;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            padding: 15px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            display: flex;
+            border-left: 4px solid var(--secondary-green); /* Accent stripe */
+        }
+
+        .rank {
+            font-size: 20px;
+            font-weight: bold;
+            color: #767676;
+            margin-right: 15px;
+            width: 30px;
+            text-align: center;
+            padding-top: 5px;
+        }
+
+        .card-details {
+            flex: 1;
+        }
+
+        .card-details h2 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin: 0 0 5px 0;
+        }
+        
+        .rating-stars {
+            color: var(--secondary-green);
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+
+        .review-count {
+            font-size: 12px;
+            color: #767676;
+            margin-left: 5px;
+        }
+
+        .snippet {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .details-link a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 13px;
+        }
+        
+        .see-more-button {
+            padding: 8px 15px; 
+            border: none; 
+            background-color: var(--secondary-green); 
+            color: white; 
+            border-radius: 20px; 
+            font-size: 14px; 
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">Parks List</a>
+            <div class="search-bar">
+                <input type="text" placeholder="Search Parks">
+            </div>
+        </div>
+    </header>
+
+    <div class="content-wrap">
+        <!-- Page Title & Subtitle -->
+        <div class="title-section">
+            <h1>Parks & Gardens in Bengaluru</h1>
+            <p>The city's most beautiful green spaces, ranked by travellers.</p>
+        </div>
+
+        <!-- Attraction List -->
+        <main class="attraction-list"> 
+
+            <!-- Park 1: Lal Bagh -->
+            <article class="attraction-card">
+                <div class="rank">#1</div>
+                <div class="card-details">
+                    <h2>Lal Bagh Botanical Garden <span style="font-size: 12px; font-weight: 500; color: #555;">(Botanical Gardens)</span></h2>
+                    <div class="rating-stars">
+                        &#9733;&#9733;&#9733;&#9733; <span class="review-count">17,100 Reviews</span>
+                    </div>
+                    <p class="snippet">A historically renowned 240-acre garden famous for its iconic Glass House and diverse flora.</p>
+                    <div class="details-link">
+                        <a href="#">See details and photos</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Park 2: Cubbon Park -->
+            <article class="attraction-card">
+                <div class="rank">#2</div>
+                <div class="card-details">
+                    <h2>Cubbon Park (Sri Chamarajendra Park)</h2>
+                    <div class="rating-stars">
+                        &#9733;&#9733;&#9733;&#9733; <span class="review-count">14,090 Reviews</span>
+                    </div>
+                    <p class="snippet">The green heart of the city, spanning 300 acres. Ideal for joggers, nature walks, and centrally located.</p>
+                    <div class="details-link">
+                        <a href="#">See details and photos</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Park 3: Bannerghatta National Park -->
+            <article class="attraction-card">
+                <div class="rank">#3</div>
+                <div class="card-details">
+                    <h2>Bannerghatta Biological Park <span style="font-size: 12px; font-weight: 500; color: #555;">(National Parks)</span></h2>
+                    <div class="rating-stars">
+                        &#9733;&#9733;&#9733; <span class="review-count">12,770 Reviews</span>
+                    </div>
+                    <p class="snippet">Located on the outskirts, this large reserve offers safari drives, a zoo, and a Butterfly Park. </p>
+                    <div class="details-link">
+                        <a href="#">Book a safari tour</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- See More Button -->
+            <div style="text-align: center;">
+                <button class="see-more-button">
+                    See More Parks
+                </button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
